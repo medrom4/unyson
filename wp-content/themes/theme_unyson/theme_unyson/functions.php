@@ -26,6 +26,40 @@ if ( ! function_exists( 'theme_unyson_setup' ) ) :
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
+		
+		
+		
+		
+		// function _action_theme_wp_print_styles() {
+  //  		if (!defined('FW')) return; // prevent fatal error when the framework is not active
+
+  //  		$option_value = fw_get_db_customizer_option('body-color');
+
+  //  		echo '<style type="text/css">'
+  //  		 	. 'body { '
+  //  			. 'backgroundr:  '. esc_html($option_value) .'!important; '
+		//         . '}'
+		//          . '</style>';
+		// 	}
+		// 	add_action('wp_print_styles', '_action_theme_wp_print_styles');
+		
+		
+		
+		function _action_theme_wp_print_styles() {
+		    if (!defined('FW')) return; // prevent fatal error when the framework is not active
+		
+		    $option_value = fw_get_db_settings_option('body-color');
+		
+		    echo '<style type="text/css">'
+		         . 'body { '
+		         . 'border: 30px solid '. esc_html($option_value) .'; '
+		         . '}'
+		         . '</style>';
+		}
+		add_action('wp_print_styles', '_action_theme_wp_print_styles');
+		
+		
+		
 
 		/*
 		 * Let WordPress manage the document title.

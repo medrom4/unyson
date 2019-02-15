@@ -14,3 +14,20 @@
 [15-Feb-2019 19:33:14 UTC] PHP  12. TGMPA_Bulk_Installer_Skin->after() /home/ubuntu/workspace/wp-admin/includes/class-wp-upgrader.php:759
 [15-Feb-2019 19:33:14 UTC] PHP  13. Bulk_Upgrader_Skin->after() /home/ubuntu/workspace/wp-content/themes/theme_unyson/theme_unyson/tgm/class-tgm-plugin-activation.php:3646
 [15-Feb-2019 19:33:14 UTC] PHP  14. sprintf() /home/ubuntu/workspace/wp-admin/includes/class-bulk-upgrader-skin.php:150
+[15-Feb-2019 20:35:39 UTC] PHP Parse error:  syntax error, unexpected ''; '' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/theme_unyson/theme_unyson/functions.php on line 40
+[15-Feb-2019 20:35:39 UTC] PHP Stack trace:
+[15-Feb-2019 20:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[15-Feb-2019 20:35:39 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[15-Feb-2019 20:35:39 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[15-Feb-2019 20:35:39 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[15-Feb-2019 21:00:28 UTC] PHP Fatal error:  Cannot redeclare _action_theme_wp_print_styles() (previously declared in /home/ubuntu/workspace/wp-content/themes/theme_unyson/theme_unyson/functions.php:33) in /home/ubuntu/workspace/wp-content/themes/theme_unyson/theme_unyson/functions.php on line 47
+[15-Feb-2019 21:00:28 UTC] PHP Stack trace:
+[15-Feb-2019 21:00:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[15-Feb-2019 21:00:28 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[15-Feb-2019 21:00:28 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[15-Feb-2019 21:00:28 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[15-Feb-2019 21:00:28 UTC] PHP   5. do_action() /home/ubuntu/workspace/wp-settings.php:451
+[15-Feb-2019 21:00:28 UTC] PHP   6. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[15-Feb-2019 21:00:28 UTC] PHP   7. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[15-Feb-2019 21:00:28 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[15-Feb-2019 21:00:28 UTC] PHP   9. theme_unyson_setup() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286

@@ -11,7 +11,15 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	
+		<!--<div class="fw-container-fluid">-->
+	
+		<!--	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>-->
+		
+		<!--</div>-->
+		
+		Карта:<?php $option_value = fw_get_db_customizer_option('html-add'); echo esc_html($option_value) ?>
+		
 	</header><!-- .entry-header -->
 
 	<?php theme_unyson_post_thumbnail(); ?>

@@ -15,6 +15,14 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
+		
+			Текст о компании: <a><?php $option_value = fw_get_db_customizer_option('about-text'); echo esc_html($option_value) ?></a>
+			
+			<span class="sep"> | </span>
+			
+			Телефон компании: <a><?php $option_value = fw_get_db_settings_option('telefon'); echo esc_html($option_value) ?></a>
+			
+			<span class="sep"> | </span>
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'theme_unyson' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
